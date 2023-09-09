@@ -15,13 +15,13 @@ const CartButton=props=>{
     console.log("Number of Cart Items");
     console.log(numberofCartItems);
 
-    return <button className={classes.button} onClick={props.displayCart}>
-
+    return <button className="flex items-center bg-[#4d1601] p-1 px-2 rounded-2xl hover:bg-[#2c0d00]" onClick={props.displayCart}>
+        <span>  Cart </span>
         <span className={classes.icon}>
         <CartIcon/>
         </span> 
-        <span>  Cart </span>
-        <span className="pl-2"> <span></span>{numberofCartItems}
+        
+        <span className="pl-2"> <span></span>{numberofCartItems >0 ? numberofCartItems :""}
         </span>
     </button>
 }
