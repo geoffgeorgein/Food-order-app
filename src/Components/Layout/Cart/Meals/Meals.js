@@ -6,10 +6,10 @@ import AvailableMeals from './AvailableMeals';
 const Meals=()=>{
 
     return (
-        <Fragment>
+        <div className='flex flex-col mt-[170px] p-2 '>
             <MealsSummary/>
             <AvailableMeals/>
-        </Fragment>
+        </div>
     );
 }
 

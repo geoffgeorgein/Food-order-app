@@ -19,9 +19,9 @@ const CartButton=props=>{
 
         <span className={classes.icon}>
         <CartIcon/>
-        </span>
+        </span> 
         <span>  Cart </span>
-        <span className={classes.bagde}> <span></span>{numberofCartItems}
+        <span className="pl-2"> <span></span>{numberofCartItems}
         </span>
     </button>
 }

@@ -21,15 +21,15 @@ const Header = (props) => {
     <Fragment className="flex">
       <header className={classes.header}>
         <Link to={"/"} className="text-black">
-          <h1>React Meals</h1>
+          <h1 className="font-bold text-2xl">React Meals</h1>
         </Link>
 
-        <div className="flex">
-          <HeaderCartButton displayCart={props.ShowCart} />
+        <div className="flex items-center justify-between">
+          <HeaderCartButton displayCart={props.ShowCart} className="mr-2"/>
           {user?.displayName ? (
-            <button  className="border-0 rounded-lg px-2 p-1 bg-black" onClick={handleSignOut}>Logout</button>
+            <button  className="border-0 rounded-lg px-2 p-1 font-bold" onClick={handleSignOut}>Logout</button>
           ) : (
-            <Link to="/signin">Sign in</Link>
+            <Link to="/signin" className="px-2 p-1 font-bold">Sign in</Link>
           )}
 
           {/* <div className={classes["main-image"]}>
